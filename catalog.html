@@ -13,17 +13,18 @@
       </a>
       <form class="search-form" action="#" method="get">
         <fieldset>
+          <legend class="visually-hidden">Поиск по сайту</legend>
           <input type="text" name="search" placeholder="Поиск:" id="search">
           <label for="search"></label>
         </fieldset>
       </form>
-      <a class="bookmark">
+      <a class="bookmark" href="">
         Закладки: 0
       </a>
-      <a class="cart add-item">
+      <a class="cart add-item" href="">
         Корзина: 10
       </a>
-      <a class="order">
+      <a class="order" href="">
         Оформить заказ
       </a>
     </div>
@@ -49,7 +50,7 @@
         <a class="my-orders" href="">
           Мои заказы
         </a>
-        <a class="account">
+        <a class="account" href="">
           Личный кабинет
         </a>
       </div>
@@ -98,59 +99,61 @@
     <h2>Перфораторы</h2>
     <div class="main-wrapper">
       <section class="filter-search">
-        <p class="filter-form">
-          Фильтр:
-        </p>
-        <div class="price-filter">
-          <h3>цена:</h3>
-          <div class="bar"></div>
-          <div class="price-bar">
-            <input type="number" value="0">
-            <span>-</span>
-            <input type="number" value="30000">
-          </div>
-        </div>
-        <div class="producers">
-          <h3>Производители:</h3>
-          <ul class="prod-list">
-            <li class="prod-item">
-              <input type="checkbox" name="b-prod" id="prod1" value="Bosch" checked>
-              <label for="prod1">Bosch</label>
-            </li>
-            <li class="prod-item">
-              <input type="checkbox" name="b-prod" id="prod2" value="Интерскол">
-              <label for="prod2">Интерскол</label>
-            </li>
-            <li class="prod-item">
-              <input type="checkbox" name="b-prod" id="prod3" value="Makita" checked>
-              <label for="prod3">Makita</label>
-            </li>
-            <li class="prod-item">
-              <input type="checkbox" name="b-prod" id="prod4" value="Dewalt">
-              <label for="prod4">Dewalt</label>
-            </li>
-            <li class="prod-item">
-              <input type="checkbox" name="b-prod" id="prod5" value="Hitachi">
-              <label for="prod5">Hitachi</label>
-            </li>
-          </ul>
-        </div>
-        <div class="power">
-          <h3>Питание:</h3>
-          <ul class="power-list">
-            <li class="power-item">
-              <input type="radio" name="battery" value="Аккумуляторные" id="pwr1" checked>
-              <label for="pwr1">Аккумуляторные</label>
-            </li>
-            <li class="power-item">
-              <input type="radio" name="battery" value="Сетевые" id="pwr2">
-              <label for="pwr2">Сетевые</label>
-            </li>
-          </ul>
-        </div>
-        <button class="submit-filter" type="submit">
-          Показать
-        </button>
+        <form class="filter-form" action="#" method="post">
+          <p class="form-title">
+            Фильтр:
+          </p>
+          <fieldset class="price-filter">
+            <legend>Цена:</legend>
+            <div class="bar"></div>
+            <div class="price-bar">
+              <input type="number" value="0">
+              <span>-</span>
+              <input type="number" value="30000">
+            </div>
+          </fieldset>
+          <fieldset class="producers">
+            <legend>Производители:</legend>
+            <ul class="prod-list">
+              <li class="prod-item">
+                <input type="checkbox" name="b-prod" id="prod1" value="Bosch" checked>
+                <label for="prod1">Bosch</label>
+              </li>
+              <li class="prod-item">
+                <input type="checkbox" name="b-prod" id="prod2" value="Интерскол">
+                <label for="prod2">Интерскол</label>
+              </li>
+              <li class="prod-item">
+                <input type="checkbox" name="b-prod" id="prod3" value="Makita" checked>
+                <label for="prod3">Makita</label>
+              </li>
+              <li class="prod-item">
+                <input type="checkbox" name="b-prod" id="prod4" value="Dewalt">
+                <label for="prod4">Dewalt</label>
+              </li>
+              <li class="prod-item">
+                <input type="checkbox" name="b-prod" id="prod5" value="Hitachi">
+                <label for="prod5">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="power">
+            <legend>Питание:</legend>
+            <ul class="power-list">
+              <li class="power-item">
+                <input type="radio" name="battery" value="Аккумуляторные" id="pwr1" checked>
+                <label for="pwr1">Аккумуляторные</label>
+              </li>
+              <li class="power-item">
+                <input type="radio" name="battery" value="Сетевые" id="pwr2">
+                <label for="pwr2">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="submit-filter" type="submit">
+            Показать
+          </button>
+        </form>
       </section>
       <section class="result">
         <div class="sorting-filter">
@@ -403,7 +406,7 @@
   <footer class="main-footer">
     <div class="first-footer">
       <div class="block-wrapper">
-        <a class="footer-logo">
+        <a class="footer-logo" href="index.html">
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Logo Technomart">
         </a>
         <p class="adress-text">
