@@ -3,36 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="preload" href="fonts/web/ptsans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/web/ptsansbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/web/cuprum.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/web/cuprumbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/web/cuprumbolditalic.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/web/cuprumitalic.woff2" as="font" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Техномарт</title>
   </head>
   <body>
     <header class="main-header">
       <div class="first-header-block">
-        <a class="header-logo" href="">
-          <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
-        </a>
-          <form class="search-form" action="#" method="get">
-            <fieldset>
-              <legend class="visually-hidden">Поиск по сайту</legend>
-              <input type="text" name="search" placeholder="Поиск:" id="search">
-              <label for="search"></label>
-            </fieldset>
-          </form>
-        <a class="bookmark" href="">
-          Закладки: 0
-        </a>
-        <a class="cart" href="">
-          Корзина: 0
-        </a>
-        <a class="order" href="">
-          Оформить заказ
-        </a>
+        <div class="central-block">
+          <a class="header-logo" href="">
+            <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
+          </a>
+            <form class="search-form" action="#" method="get">
+              <fieldset class="field-border">
+                <legend class="visually-hidden">Поиск по сайту</legend>
+                <input class="search-site" type="text" name="search" placeholder="Поиск:" id="search">
+                <label for="search"></label>
+              </fieldset>
+            </form>
+          <a class="bookmark" href="">
+            Закладки: 0
+          </a>
+          <a class="cart" href="">
+            Корзина: 0
+          </a>
+          <a class="order" href="">
+            Оформить заказ
+          </a>
+        </div>
       </div>
       <div class="second-header-block">
         <p class="description-text">
@@ -65,7 +63,7 @@
           <li class="nav-list-item">
             <a class="item-link" href="">Новости</a>
           </li>
-          <li class="nav-list-item">
+          <li class="nav-list-item special">
             <a class="item-link" href="">Спецпредложения</a>
           </li>
           <li class="nav-list-item">
@@ -349,9 +347,11 @@
               ЖелДорЭкспедиция
             </li>
           </ul>
-          <a class="more" href="">
-            Подробнее о компании
-          </a>
+          <div class="more">
+            <a class="more-link" href="">
+              Подробнее о компании
+            </a>
+          </div>
         </div>
         <div class="contact-block">
           <h2>Контакты</h2>
@@ -399,60 +399,66 @@
             +7 (812) 555-05-55
           </p>
         </div>
-        <ul class="footer-nav-list">
-          <li class="footer-item">
-            <a class="item-link" href="">Компания</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Новости</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Доставка</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Контакты</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Материалы</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Техника</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Инструмент</a>
-          </li>
-          <li class="footer-item">
-            <a class="item-link" href="">Спецпредложения</a>
-          </li>
-        </ul>
+        <div class="lists-wrapper">
+          <ul class="footer-nav-list">
+            <li class="footer-item">
+              <a class="item-link" href="">Компания</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="">Новости</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="">Доставка</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list yellow">
+            <li class="footer-item">
+              <a class="item-link" href="">Материалы</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="">Техника</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="">Инструмент</a>
+            </li>
+            <li class="footer-item">
+              <a class="item-link" href="">Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="second-footer">
-        <p class="copyright">
-          &#169; 2010–2019 Компания «Техномарт» Все права защищены
-        </p>
-        <ul class="social">
-          <li class="social-item">
-            <a class="social-link" href="">Vkontakte</a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="">Facebook</a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="">Instagram</a>
-          </li>
-        </ul>
-        <p class="feedback">
-          Обратная связь:
-          <a class="email" href="">
-            mail@htmlacademy.ru
-          </a>
-        </p>
-        <p class="made">
-          Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmkacademy.ru</a>
-        </p>
+        <div class="second-wrapper">
+          <p class="copyright">
+            &#169; 2010–2019 Компания «Техномарт» Все права защищены
+          </p>
+          <ul class="social">
+            <li class="social-item">
+              <a class="social-link" href="">Vkontakte</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">Facebook</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">Instagram</a>
+            </li>
+          </ul>
+          <p class="feedback">
+            Обратная связь:
+            <a class="email" href="">
+              mail@htmlacademy.ru
+            </a>
+          </p>
+          <p class="made">
+            Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmkacademy.ru</a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>

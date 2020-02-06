@@ -1,0 +1,590 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/web/ptsans.woff2") format("woff2"), url("../fonts/web/ptsans.woff") format("woff");
+}
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/web/ptsansbold.woff2") format("woff2"), url("../fonts/web/ptsansbold.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Cuprum";
+  font-style: normal;
+  src: url("../fonts/web/cuprum.woff2") format("woff2"), url("../fonts/web/cuprum.woff") format("woff");
+}
+@font-face {
+  font-weight: bold;
+  font-family: "Cuprum";
+  font-style: normal;
+  src: url("../fonts/web/cuprumbold.woff2") format("woff2"), url("../fonts/web/cuprum.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Cuprum";
+  font-style: italic;
+  src: url("../fonts/web/cuprumitalic.woff2") format("woff2"), url("../fonts/web/cuprumitalic.woff") format("woff");
+}
+@font-face {
+  font-weight: bold;
+  font-family: "Cuprum";
+  font-style: italic;
+  src: url("../fonts/web/cuprumbolditalic.woff2") format("woff2"), url("../fonts/web/cuprumbolditalic.woff") format("woff");
+}
+body {
+  font-family: "Cuprum", "Aria", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  max-width: 100%;
+}
+.visually-hidden {
+  display: none;
+}
+.main-header {
+  background-color: #f4f7f9;
+  padding-bottom: 60px;
+}
+.first-header-block {
+  background-color: #293449;
+}
+.central-block {
+  width: 941px;
+  margin: 0 auto;
+  display: flex;
+}
+.header-logo {
+  display: block;
+  width: 220px;
+  text-align: center;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.search-form {
+  width: 271px;
+}
+.field-border {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.search-site {
+  border: 0;
+  background-color: transparent;
+}
+.search-site::placeholder {
+  color: #fff;
+  font-size: 17px;
+  line-height: 18px;
+}
+.bookmark,
+.cart,
+.order {
+  width: 150px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+}
+.order {
+  background-color: #63a63e;
+  text-align: center;
+}
+.second-header-block {
+  width: 941px;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 44px;
+  display: flex;
+}
+.description-text {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  width: 196px;
+  margin: 0;
+}
+.description-block {
+  width: 270px;
+  margin-right: 69px;
+  margin-left: 71px;
+}
+.telephone-number {
+  border: 3px solid #fff;
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+}
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  margin: 0;
+}
+.buttons-wrapper {
+  width: 281px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in,
+.registration {
+  background-color: #fff;
+  color: #000;
+  font-size: 21px;
+  line-height: 21px;
+  border: 0;
+  width: 121px;
+  padding: 0;
+}
+.registration {
+  width: 150px;
+}
+.main-nav {
+  background-color: #32425c;
+  width: 941px;
+  margin: 0 auto;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-list-item {
+  width: 65px;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 22px 0;
+  text-align: center;
+}
+.nav-list-item.special {
+  width: 125px;
+}
+.main-content {
+  width: 941px;
+  margin: 0 auto;
+}
+.about-company {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 82px;
+  padding-bottom: 86px;
+}
+.about-block {
+  width: 519px;
+}
+.main-text,
+.contact-block h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 38px;
+}
+.contact-block {
+  width: 300px;
+}
+.description,
+.transportation {
+  font: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 36px;
+}
+.transportation {
+  margin-right: 120px;
+  margin-bottom: 26px;
+}
+.transportation-list {
+  list-style: none;
+  padding-left: 36px;
+  margin: 0;
+}
+.transportation-item {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+.office-text {
+  margin: 0;
+  margin-right: 110px;
+  margin-bottom: 36px;
+}
+.map-img {
+  border: 0;
+  margin-bottom: 40px;
+}
+.more {
+  background-color: #ee3643;
+  width: 220px;
+  text-align: center;
+  padding: 7px 0;
+  border-radius: 5px;
+}
+.more-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.contact-us {
+  border: 0;
+  color: #fff;
+  width: 300px;
+  background-color: #ee3643;
+  text-align: center;
+  padding: 9px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.main-footer {
+  background-color: #32425c;
+}
+.first-footer {
+  width: 941px;
+  margin: 0 auto;
+  display: flex;
+}
+.block-wrapper {
+  width: 390px;
+}
+.footer-logo {
+  display: block;
+  text-align: center;
+  width: 220px;
+  background: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 32px;
+}
+.adress-text,
+.phone-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: normal;
+}
+.lists-wrapper {
+  width: 550px;
+}
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-nav-list.yellow .item-link{
+  color: #ffda96;
+}
+.second-footer {
+  background-color: #293449;
+}
+.second-wrapper {
+  width: 941px;
+  margin: 0 auto;
+  display: flex;
+}
+.copyright {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  width: 230px;
+}
+.social {
+  list-style: none;
+  width: 150px;
+  display: flex;
+}
+.feedback {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  width: 140px;
+}
+.feedback .email {
+  color: #ffd180;
+}
+.made {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  width: 115px;
+}
+.made a {
+  color: #ffd180;
+}
+.map-popup,
+.write-popup {
+  display: none;
+}
+/*----------*/
+.add-item {
+  background-color: #ee3643;
+}
+.buttons-wrapper {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.signin {
+  width: 100%;
+  background-color: #fff;
+}
+.login {
+  color: #000;
+  font-size: 21px;
+  line-height: 21px;
+}
+.my-orders,
+.account {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+.my-orders {
+  margin-right: 32px;
+}
+.breadcrumbs {
+  width: 941px;
+  margin: 25px auto;
+}
+.bread-item {
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+}
+.info h2 {
+  width: 911px;
+  margin: 0 auto;
+  color: #32425c;
+  background-color: #f2f6f8;
+  text-transform: uppercase;
+  padding: 32px 0;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.center-content {
+  width: 941px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.filter-search {
+  width: 221px;
+}
+.form-title {
+  background-color: #f7f3ec;
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+}
+.price-filter,
+.producers,
+.power {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.price-filter legend,
+.producers legend,
+.power legend {
+  color: #000;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "PT Sans";
+  font-weight: bold;
+}
+.prod-list,
+.power-list,
+.sorting-list,
+.sorting-direction {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.prod-item label,
+.power-item label {
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+}
+.submit-filter {
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  width: 140px;
+  padding: 9px 0;
+  background-color: transparent;
+}
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.sorting-filter {
+  width: 100%;
+  display: flex;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+.sorting-list {
+  display: flex;
+  width: 380px;
+  margin-right: auto;
+  align-items: center;
+}
+.sorting-label {
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  margin-left: 19px;
+  margin-right: 139px;
+}
+.sorting-item a{
+  color: rgba(0,0,0,0.3);
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
+  text-transform: uppercase;
+}
+.sorting-direction {
+  width: 61px;
+}
+.cart-popup {
+  display: none;
+}
+.result-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.result-item {
+  border: 1px solid #e5e5e5;
+  width: 220px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.buy-item,
+.bookmarks-add {
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 0;
+  width: 135px;
+  padding: 9px 0;
+}
+.hover-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bookmarks-add {
+  background-color: transparent;
+  border: 3px solid #63a63e;
+  box-shadow: none;
+  color: #32425c;
+  margin-top: 8px;
+}
+.name-item {
+  color: #000;
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0 auto;
+  width: 160px;
+}
+.initial-price {
+  color: #999;
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+.sale-price {
+  background-image: url("../img/red-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin: 0;
+  padding: 10px 0;
+}
+.result-item.new-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+}
+.perforators {
+  background-color: #f4f7f9;
+  padding-top: 67px;
+  padding-bottom: 73px;
+}
+.perforators h2 {
+  margin: 0 auto;
+  padding: 0;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.perforators p {
+  color: #000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 auto;
+  width: 911px;
+}
