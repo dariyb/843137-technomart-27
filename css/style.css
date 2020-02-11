@@ -172,10 +172,6 @@ img {
 .nav-list-item.special {
   width: 125px;
 }
-.main-content {
-  width: 941px;
-  margin: 0 auto;
-}
 .about-company {
   display: flex;
   justify-content: space-between;
@@ -184,6 +180,13 @@ img {
 }
 .about-block {
   width: 519px;
+}
+.tech-items,
+.item-cards,
+.popular-producers,
+.about-company {
+  width: 941px;
+  margin: 0 auto;
 }
 .main-text,
 .contact-block h2 {
@@ -587,4 +590,228 @@ img {
   line-height: 24px;
   margin: 0 auto;
   width: 911px;
+}
+.tech-items h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.materials {
+  position: relative;
+  background-color: #ffbf47;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+.tools {
+  background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+.devices {
+  background-color: #dc91d8;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+.slide1 {
+  background-image: url("../img/slide1.jpg");
+  background-repeat: no-repeat;
+}
+.slide1-text h2,
+.slide2-text h2 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slide1-text p,
+.slide2-text p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+.catalog-link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 11px 48px;
+  background-color: #ee3643;
+  border-radius: 4px;
+}
+.slide2 {
+  background-image: url("../img/slide2.jpg");
+  background-repeat: no-repeat;
+}
+.sales {
+  background-color: #8ed78f;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+.delivery {
+  background-color: #ffc047;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+.sales a,
+.delivery a,
+.materials a,
+.tools a,
+.devices a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 135px;
+  padding: 9px 0;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2px;
+}
+.popular-block {
+  background-color: #f9f5f0;
+}
+.popular-block h2{
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.items-list {
+  list-style: none;
+}
+.materials.new-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+}
+.popular-items {
+  display: block;
+  width: 253px;
+  padding: 9px 0;
+  color: #fff;
+  background-color: #ee3643;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+.producers-list {
+  list-style: none;
+}
+.producers-item {
+  width: 220px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.services {
+  background-color: #f4f7f9;
+}
+.services h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.services p {
+  color: #000;
+  font-size: 13px;
+  line-height: 24px;
+}
+p.switch-text {
+  background-color: #32425c;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  color: #fff;
+  font: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  padding: 16px 0px 15px 22px;
+}
+p.now {
+  background-color: #fff;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  color: #32425c;
+}
+.services-switches {
+  width: 240px;
+  position: relative;
+}
+.services-switches::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow.png");
+}
+.service-slide h3{
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.service-slide p {
+  color: #000;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+}
+.service-slide.transportation {
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+}
+.service-slide.guarantee {
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+}
+.service-slide.credit{
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+}
+.pages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+.page {
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 38px;
+  padding: 6px 0;
+}
+.page:last-child {
+  width: 140px;
+  text-transform: uppercase;
+}
+.page a {
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+}
+.page.active {
+  background-color: #ee3643;
+  border: 0;
+  border: 1px solid #ee3643;
+}
+.page.active a {
+  color: #fff;
 }
