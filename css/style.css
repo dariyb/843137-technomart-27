@@ -959,7 +959,7 @@ img {
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
 }
-.result-item.new-label .initial-price {
+.initial-price.no-sale {
   margin-bottom: 39px;
 }
 .perforators {
@@ -1339,6 +1339,8 @@ label.switch-text:hover {
   margin: 0;
   padding: 0;
   width: 300px;
+  display: flex;
+  justify-content: space-between;
 }
 .page {
   text-align: center;
