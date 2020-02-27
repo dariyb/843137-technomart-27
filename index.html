@@ -371,21 +371,29 @@
           </button>
           <div class="map-popup">
             <img src="img/map-big.png" width="940" alt="Company`s adress: улица Большая Конюшенная, дом 19">
-            <button class="exit" type="button">Close</button>
+            <button class="exit" type="button"><span class="visually-hidden">Close</span></button>
           </div>
           <div class="write-popup">
             <form class="write-us" action="#" method="post">
-              <button class="exit" type="button">Close</button>
+              <button class="exit" type="button"><span class="visually-hidden">Close</span></button>
               <fieldset class="writeus-form">
                 <legend class="visually-hidden">Контактная форма</legend>
-                <label for="f-name">Ваше имя:</label>
-                <input class="fio" type="text" name="fname" id="f-name" placeholder="Имя Фамилия">
-                <label for="email">Ваш e-mail:</label>
-                <input class="e-mail" type="email" name="email" id="email" placeholder="email@example.com">
+                <div class="inputs-wrapper">
+                  <div class="name-wrapper">
+                    <label for="f-name">Ваше имя:</label>
+                    <input class="fio" type="text" name="fname" id="f-name" placeholder="Имя Фамилия">
+                  </div>
+                  <div class="email-wrapper">
+                    <label for="email">Ваш e-mail:</label>
+                    <input class="e-mail" type="email" name="email" id="email" placeholder="email@example.com">
+                  </div>
+                </div>
                 <label for="message">Текст письма:</label>
                 <textarea class="text-area" id="message">В свободной форме</textarea>
               </fieldset>
-              <button class="send-form" type="submit">Отправить</button>
+              <div class="send-wrapper">
+                <button class="send-form" type="submit">Отправить</button>
+              </div>
             </form>
           </div>
         </div>
