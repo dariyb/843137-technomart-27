@@ -903,9 +903,10 @@ img {
 }
 .sorting-list {
   display: flex;
-  width: 380px;
+  width: 357px;
   margin-right: auto;
   align-items: center;
+  justify-content: space-between;
 }
 .sorting-label {
   color: #000;
@@ -921,13 +922,39 @@ img {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #ee3643;
   text-transform: uppercase;
+  border-bottom: 1px dotted #ee3643;
+}
+.sorting-item.active a {
+  color: #ee3643;
+  border-bottom: 0;
+}
+.sorting-item a:hover {
+  color: #000;
+  border-bottom: 1px solid #ee3643;
+}
+.sorting-item a:active {
+  color: #ee3643;
+  border: 0;
 }
 .sorting-direction {
   width: 61px;
+  display: flex;
+  align-items: center;
+}
+.up-dir {
+  margin-right: 21px;
+}
+.active-dir .up {
+  fill: #ee3643;
+}
+.up:hover,
+.down:hover {
+  fill: #000;
+}
+.up:active,
+.down:active {
+  fill: #ee3643;
 }
 .cart-popup {
   width: 620px;
@@ -1496,6 +1523,7 @@ label.switch-text:hover {
   width: 300px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 .page {
   text-align: center;
@@ -1522,6 +1550,17 @@ label.switch-text:hover {
 }
 .page.active a {
   color: #fff;
+}
+.page:hover {
+  border-color: #bdc6ca;
+  background-color: #fff;
+}
+.page:hover a {
+  color: #000;
+}
+.page:active {
+  border-color: #ee3643;
+  background-color: #fff;
 }
 .tech-items {
   display: flex;
@@ -1801,4 +1840,58 @@ label.switch-text:hover {
 }
 .bread-item:nth-child(3)::before {
   left: 97px;
+}
+.bar-wrapper {
+  width: 180px;
+  background-color: #f7f3ec;
+  margin-bottom: 9px;
+  margin-top: 15px;
+  padding: 39px 20px;
+  position: relative;
+}
+.main-bar {
+  background-color: #d7dcde;
+  width: 180px;
+  margin: 0 auto;
+  height: 2px;
+}
+.green-bar {
+  width: 152px;
+  background-color: #00ca74;
+  height: 2px;
+}
+.range-button {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+}
+.range-button.min {
+  top: 29px;
+  left: 18px;
+}
+.range-button.max {
+  top: 29px;
+  left: 161px;
+}
+.price-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.price-bar input {
+  border: 0;
+  background-color: #f7f3ec;
+  width: 85px;
+  padding: 7px 0;
+  padding-left: 10px;
+  font-family: "PT Sans";
+  color: #000;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
 }

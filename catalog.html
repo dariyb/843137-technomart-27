@@ -115,11 +115,23 @@
             </p>
             <fieldset class="price-filter">
               <legend>Цена:</legend>
-              <div class="bar"></div>
+              <div class="bar-wrapper">
+                <div class="main-bar">
+                  <div class="green-bar"></div>
+                </div>
+                <button class="range-button min">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                  </svg>
+                </button>
+                <button class="range-button max">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                  </svg>
+                </button>
+              </div>
               <div class="price-bar">
-                <input type="number" value="0">
-                <span>-</span>
-                <input type="number" value="30000">
+                <input type="number" name="min-price" value="0">
+                <span>&#8211;</span>
+                <input type="number" name="max-price" value="30000">
               </div>
             </fieldset>
             <fieldset class="producers">
@@ -182,11 +194,17 @@
               </li>
             </ul>
             <ul class="sorting-direction">
-              <li class="up">
-                <a class="visually-hidden" href="">up</a>
+              <li class="up-dir">
+                <a class="sorting-arrow active-dir" href=""><span class="visually-hidden">up</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path class="up" fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
               </li>
-              <li class="down">
-                <a class="visually-hidden" href="">down</a>
+              <li class="down-dir">
+                <a class="sorting-arrow" href=""><span class="visually-hidden">down</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path class="down" fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg>
+                </a>
               </li>
             </ul>
           </div>
