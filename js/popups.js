@@ -7,6 +7,9 @@ var closeMapPopup = document.querySelector(".map-popup .exit");
 var focusName = document.querySelector(".fio");
 var formWrite = document.querySelector(".write-us");
 var emailBlock = document.querySelector(".e-mail");
+var cartPopup = document.querySelector(".cart-popup");
+var closeCart = document.querySelector(".cart-popup .exit");
+var buyItem = document.querySelectorAll(".buy-item");
 
 var isStorageSupport = true;
   var storage = "";
@@ -17,6 +20,16 @@ var isStorageSupport = true;
     isStorageSupport = false;
   }
 
+  for (var i=0; i < buyItem.length; i++) {
+    buyItem[i].addEventListener("click", function(event) {
+      event.preventDefault();
+      cartPopup.classList.remove("visually-hidden");
+    });
+  }
+  closeCart.addEventListener("click", function(e) {
+    e.preventDefault();
+    cartPopup.classList.add("visually-hidden");
+  })
 contactButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   writePopup.classList.remove("visually-hidden");

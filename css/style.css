@@ -1114,6 +1114,8 @@ img {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
+  animation: bounce .4s;
+  z-index: 40;
 }
 .cart-popup::before {
   content: "";
