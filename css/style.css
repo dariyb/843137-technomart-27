@@ -1111,9 +1111,9 @@ img {
   width: 620px;
   position: fixed;
   top: 20%;
-  left: 27%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
-  display: none;
 }
 .cart-popup::before {
   content: "";
@@ -1971,11 +1971,13 @@ label.switch-text:hover {
   position: fixed;
   width: 940px;
   height: 446px;
-  left: 205px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 20%;
+  -webkit-animation: bounce .4s;
+          animation: bounce .4s;
   -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
           box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
-  display: none;
 }
 .map-popup img {
   position: relative;
@@ -1993,6 +1995,7 @@ label.switch-text:hover {
   padding: 0;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
+  z-index: 10;
 }
 .write-us .exit,
 .cart-popup .exit {
@@ -2001,13 +2004,15 @@ label.switch-text:hover {
 .write-popup {
   position: fixed;
   top: 20%;
-  left: 355px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 620px;
   height: 430px;
   background-color: #fff;
   -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
           box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-  display: none;
+  -webkit-animation: bounce .4s;
+          animation: bounce .4s;
 }
 .write-us {
   width: 100%;
@@ -2242,4 +2247,57 @@ label.switch-text:hover {
 .price-bar input:last-child {
   width: 72px;
   padding-right: 2px;
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: translate(-50%,-60%);
+        transform: translate(-50%,-60%)
+    }
+
+    40% {
+        -webkit-transform: translate(-50%,-47%);
+        transform: translate(-50%,-47%)
+    }
+
+    75% {
+        -webkit-transform: translate(-50%,-33%);
+        transform: translate(-50%,-33%)
+    }
+
+    to {
+        -webkit-transform: translate(-50%,-20%);
+        transform: translate(-50%,-20%)
+    }
+}
+@keyframes shake {
+    0%,to {
+        -webkit-transform: translateX(-40%);
+        transform: translateX(-40%)
+    }
+
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translateX(-55%);
+        transform: translateX(-55%)
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(-35%);
+        transform: translateX(-35%)
+    }
+}
+.modal-error {
+    -webkit-animation: shake .5s;
+    animation: shake .5s
+}
+.map-popup img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  margin: 0;
+}
+.map-popup iframe {
+  border: 0;
+  z-index: 5;
+  position: relative;
 }
