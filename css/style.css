@@ -2034,6 +2034,7 @@ label.switch-text:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   width: 460px;
   margin: 0 auto;
   padding-bottom: 35px;
